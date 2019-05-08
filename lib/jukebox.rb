@@ -28,7 +28,7 @@ def play (songs)
   puts "Please enter a song name or number:"
   song = gets.chomp
   songs.each do |song_list|
-  if song == song_list
+  if songs.include? (song) 
     puts "Playing #{song}"
   elsif song == [1..9]
   puts "Playing#{songs[song - 1]}"
@@ -38,10 +38,6 @@ def play (songs)
 end 
 end 
 
-  if (1..9).to_a.include?(song_to_play.to_i)
-    puts "Playing #{songs[song_to_play.to_i - 1]}"
-  elsif songs.include?(song_to_play)
-    puts "Playing #{song_to_play}"
 
 def exit_jukebox
   puts "Goodbye"
