@@ -38,6 +38,9 @@ def play (songs)
 end 
 end 
 
+  if (1..9).to_a.include?(song_to_play.to_i)
+    puts "Playing #{songs[song_to_play.to_i - 1]}"
+
 
 def exit_jukebox
   puts "Goodbye"
