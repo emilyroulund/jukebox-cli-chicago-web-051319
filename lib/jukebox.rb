@@ -30,16 +30,13 @@ def play (songs)
   songs.each do |song_list|
   if songs.include? (song) 
     puts "Playing #{song}"
-  elsif song == [1..9]
+  elsif (1..10).to_a.include? 
   puts "Playing#{songs[song - 1]}"
   else 
     puts "Invalid input, please try again"
   end
 end 
 end 
-
-  if (1..9).to_a.include?(song_to_play.to_i)
-    puts "Playing #{songs[song_to_play.to_i - 1]}"
 
 
 def exit_jukebox
