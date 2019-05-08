@@ -30,7 +30,7 @@ def play (songs)
   songs.each do |song_list|
   if songs.include? (song) 
     puts "Playing #{song}"
-  elsif (1..10).to_a.include? to_i
+  elsif (1..10).to_a.include? (song.to_i)
   puts "Playing#{songs[song - 1]}"
   else 
     puts "Invalid input, please try again"
